@@ -4,6 +4,7 @@
   "description": "![Under Construction](images/under-construction.png)",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.1"
+    "@commitlint/config-conventional": "^17.6.1",
+    "husky": "^8.0.3"
   }
 }
