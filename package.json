@@ -1,0 +1,16 @@
+{
+  "name": "resturant-page",
+  "version": "0.0.0",
+  "description": "![Under Construction](images/under-construction.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1"
+  }
+}
