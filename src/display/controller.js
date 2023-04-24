@@ -26,6 +26,13 @@ const loadDisplay = () => {
   setActiveButton(document.getElementById('home-button'));
 };
 
+const switchTabTo = (tab) => {
+  const main = document.querySelector('main');
+
+  main.innerHTML = '';
+  main.appendChild(tab);
+};
+
 const init = () => {
   const main = document.querySelector('main');
   const homeButton = document.getElementById('home-button');
@@ -37,8 +44,7 @@ const init = () => {
       return;
     }
     setActiveButton(homeButton);
-    main.innerHTML = '';
-    main.appendChild(Home());
+    switchTabTo(Home());
   });
 
   menuButton.addEventListener('click', () => {
@@ -46,8 +52,7 @@ const init = () => {
       return;
     }
     setActiveButton(menuButton);
-    main.innerHTML = '';
-    main.appendChild(Menu());
+    switchTabTo(Menu());
   });
 
   contactButton.addEventListener('click', () => {
@@ -55,8 +60,7 @@ const init = () => {
       return;
     }
     setActiveButton(contactButton);
-    main.innerHTML = '';
-    main.appendChild(Contact());
+    switchTabTo(Contact());
   });
 };
 
