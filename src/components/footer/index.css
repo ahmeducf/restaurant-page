@@ -1,0 +1,21 @@
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--background-dark);
+  line-height: normal;
+}
+
+.fa-github {
+  font-size: 24px;
+  color: var(--font-color);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
