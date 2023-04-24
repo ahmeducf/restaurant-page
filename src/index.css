@@ -1,0 +1,66 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Tangerine:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+  --font-color: #eee;
+  --font-color-dark: #aaa;
+  --border-color: #222;
+  --background-light: rgba(0, 0, 0, 0.6);
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.9);
+}
+
+/* Global styles */
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'cursive', system-ui, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  /* CSS Reset */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* Catch errors */
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--font-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light);
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
