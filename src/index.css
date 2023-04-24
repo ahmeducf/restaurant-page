@@ -65,7 +65,15 @@ main {
   width: 100%;
 }
 
-main .container {
+main .home-container,
+main .menu-container,
+main .contact-container {
+  padding: 3rem;
+  margin: 6rem 0;
+  width: 50%;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-light);
+  font-size: 1.2rem;
   animation: fade-in 1.5s ease-in-out;
 }
 
