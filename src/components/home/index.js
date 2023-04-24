@@ -1,4 +1,5 @@
 import './index.css';
+import chefIcon from './assets/chef.png';
 
 const Home = () => {
   const container = document.createElement('div');
@@ -11,7 +12,7 @@ const Home = () => {
   p2.textContent = 'Made with passion since 19011.';
 
   const img = document.createElement('img');
-  img.src = './assets/chef.png';
+  img.src = chefIcon;
   img.alt = 'Chef';
 
   const p3 = document.createElement('p');
