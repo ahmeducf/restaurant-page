@@ -13,18 +13,27 @@ const menuButton = document.getElementById('menu-button');
 const contactButton = document.getElementById('contact-button');
 
 homeButton.addEventListener('click', () => {
+  if (homeButton.classList.contains('active')) {
+    return;
+  }
   setActiveButton(homeButton);
   main.innerHTML = '';
   main.appendChild(Home());
 });
 
 menuButton.addEventListener('click', () => {
+  if (menuButton.classList.contains('active')) {
+    return;
+  }
   setActiveButton(menuButton);
   main.innerHTML = '';
   main.appendChild(Menu());
 });
 
 contactButton.addEventListener('click', () => {
+  if (contactButton.classList.contains('active')) {
+    return;
+  }
   setActiveButton(contactButton);
   main.innerHTML = '';
   main.appendChild(Contact());
