@@ -1,0 +1,15 @@
+nav .nav-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  padding: 1rem 0;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.nav-item.active {
+  border-bottom: 3px solid var(--font-color);
+}
