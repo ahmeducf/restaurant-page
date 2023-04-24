@@ -1,0 +1,33 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-container .phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 1rem 0;
+}
+
+.phone i,
+.address i {
+  width: 25px;
+}
+
+.contact-container .address {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.address img {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  margin-top: 2rem;
+}
