@@ -3,7 +3,7 @@ import chefIcon from './assets/chef.png';
 
 const Home = () => {
   const container = document.createElement('div');
-  container.classList.add('container');
+  container.classList.add('home-container');
 
   const p1 = document.createElement('p');
   p1.textContent = 'Best pizza in your country!';

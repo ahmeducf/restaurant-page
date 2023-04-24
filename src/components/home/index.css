@@ -1,4 +1,4 @@
-main .container {
+main .home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
