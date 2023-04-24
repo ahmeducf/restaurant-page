@@ -64,3 +64,16 @@ main {
   align-items: center;
   width: 100%;
 }
+
+.container {
+  animation: fade-in 1.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
