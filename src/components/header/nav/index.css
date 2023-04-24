@@ -1,13 +1,13 @@
 nav .nav-items {
   display: flex;
-  gap: 1.5rem;
 }
 
 .nav-item {
-  padding: 1rem 0;
+  padding: 1rem;
   font-weight: 500;
   border-bottom: 3px solid transparent;
-  transition: border-bottom 0.2s ease-in-out;
+  width: 160px;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 .nav-item.active {

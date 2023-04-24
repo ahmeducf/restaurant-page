@@ -2,9 +2,6 @@ import './index.css';
 import chefIcon from './assets/chef.png';
 
 const Home = () => {
-  const home = document.createElement('main');
-  home.classList.add('content');
-
   const container = document.createElement('div');
   container.classList.add('container');
 
@@ -25,9 +22,8 @@ const Home = () => {
   container.appendChild(p2);
   container.appendChild(img);
   container.appendChild(p3);
-  home.appendChild(container);
 
-  return home;
+  return container;
 };
 
 export default Home;

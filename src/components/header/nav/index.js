@@ -11,8 +11,9 @@ const Nav = (args) => {
 
     const navButton = document.createElement('button');
     navButton.classList.add('nav-item');
-
+    navButton.setAttribute('id', `${item.toLowerCase()}-button`);
     navButton.textContent = item;
+
     navItem.appendChild(navButton);
     navItems.appendChild(navItem);
   });

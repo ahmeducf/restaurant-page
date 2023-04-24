@@ -1,6 +1,7 @@
 import Header from '../components/header';
 import Home from '../components/home';
 import Footer from '../components/footer';
+import setActiveButton from './set-active-button';
 
 const tabFirstLoad = () => {
   const body = document.querySelector('body');
@@ -12,6 +13,8 @@ const tabFirstLoad = () => {
   body.appendChild(Footer());
 
   main.appendChild(Home());
+
+  setActiveButton(document.getElementById('home-button'));
 };
 
 export default tabFirstLoad;
