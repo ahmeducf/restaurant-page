@@ -3,16 +3,16 @@ main .home-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 3rem;
-  margin: 6rem 0;
+  gap: 16px;
+  padding: 48px;
+  margin: 96px 0;
   width: 50%;
   border: 1px solid var(--border-color);
   background-color: var(--background-light);
   font-size: 1.2rem;
 }
 
-.container img {
+.home-container img {
   width: 50%;
-  margin: 2rem 0;
+  margin: 32px 0;
 }
