@@ -9,7 +9,7 @@ const Home = () => {
   p1.textContent = 'Best pizza in your country!';
 
   const p2 = document.createElement('p');
-  p2.textContent = 'Made with passion since 19011.';
+  p2.textContent = 'Made with passion since 1911.';
 
   const img = document.createElement('img');
   img.src = chefIcon;
