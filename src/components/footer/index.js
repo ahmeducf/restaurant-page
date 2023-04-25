@@ -15,6 +15,7 @@ const Footer = () => {
 
   const githubIcon = document.createElement('i');
   githubIcon.classList.add('fab', 'fa-github');
+  githubIcon.setAttribute('alt', 'Github');
 
   a.appendChild(githubIcon);
   container.appendChild(p);
