@@ -12,10 +12,10 @@ const Footer = () => {
   const a = document.createElement('a');
   a.href = 'https://github.com/ahmeducf';
   a.target = '_blank';
+  a.alt = 'Github';
 
   const githubIcon = document.createElement('i');
   githubIcon.classList.add('fab', 'fa-github');
-  githubIcon.setAttribute('alt', 'Github');
 
   a.appendChild(githubIcon);
   container.appendChild(p);
