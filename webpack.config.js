@@ -1,8 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     index: './src/index.js',
   },
@@ -36,5 +37,26 @@ module.exports = {
   },
   optimization: {
     runtimeChunk: 'single',
+    minimize: true,
+    minimizer: [
+      '...',
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            plugins: [
+              [
+                'imagemin-gifsicle',
+                { interlaced: true, quality: 20, progressive: true },
+              ],
+              ['imagemin-mozjpeg', { quality: 20, progressive: true }],
+              ['imagemin-pngquant', { quality: [0, 0.1] }],
+              ['imagemin-svgo', { plugins: [{ removeViewBox: false }] }],
+            ],
+          },
+        },
+        loader: false,
+      }),
+    ],
   },
 };
