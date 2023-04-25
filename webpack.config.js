@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
+      favicon: './src/assets/favicon.ico',
       template: './src/index.html',
     }),
   ],
